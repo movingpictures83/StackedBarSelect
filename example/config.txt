@@ -1,0 +1,2 @@
+Prefix plugins/StackedBarSelect/example
+Plugin StackedBarSelect inputfile parameters.txt outputfile .
