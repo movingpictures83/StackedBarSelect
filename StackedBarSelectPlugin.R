@@ -27,9 +27,10 @@ run <- function() {
 
 output <- function(outputfile) {
 
+   write.csv(assay, paste(outputfile, "RRSA.csv", sep="/"))
 for(species in species_combined_list) {
   
-  but_plot <- ggboxplot(assay, x="group" , y = species,
+      	but_plot <- ggboxplot(assay, x="group" , y = species,
                         color = "black", palette = "jco", fill="group") +
     # theme(axis.title.x = element_text(size=0, face="bold"), axis.text.x =element_text(size=12, face="bold")) +
      theme_gray() #+ ylim(1,3.5)
